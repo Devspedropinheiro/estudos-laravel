@@ -1,11 +1,5 @@
 # Mini projeto 1: lista de tarefas
 
-Objetivo: praticar um CRUD pequeno.
+O repositório traz arquivos de partida para um CRUD pequeno. Copie os exemplos de `app/`, `database/`, `routes/` e `resources/` para os mesmos caminhos de uma aplicação Laravel criada com Composer. Renomeie a migration para incluir o timestamp exigido pelo Laravel e incorpore as rotas ao `routes/web.php` da aplicação.
 
-1. Criar migration `tasks` com `title`, `completed` e timestamps.
-2. Criar `TaskController` com `index`, `store`, `update` e `destroy`.
-3. Definir rotas de recurso em `routes/web.php`.
-4. Criar uma view Blade com formulÃ¡rio, lista e botÃµes de aÃ§Ã£o.
-5. Validar o tÃ­tulo e usar CSRF em todos os formulÃ¡rios.
-
-Execute as migrations com `php artisan migrate` e inicie com `php artisan serve`.
+Configure o banco no `.env`, execute `php artisan migrate`, inicie com `php artisan serve` e acesse `/tasks`. O título é validado no controller e os formulários incluem CSRF.
